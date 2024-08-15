@@ -1,0 +1,58 @@
+﻿body
+{
+	background-image:url(1.jpg);
+	background-position:center;
+	background-size:cover;
+	font-family:sans-serif;
+	margin-top:40px;
+}
+.formhead
+{
+	width:800px;
+	background-color:rgb(0,0,0,0.6);
+	margin:auto;
+	color:#FFFFFF;
+	padding:10px 0px 10px 0px;
+	text-align:center;
+	border-radius:15px 15px 0px 0px;
+}
+.my-form input[type="text"]
+{
+	width:100%;
+}
+.my-form input[type="phone"],input[type="email"] 
+{
+	width:60%;
+}
+.button
+{
+	background-color:#3BAF9F;
+	display: block;
+	margin:20px 0px 0px 20px;
+	text-align:center;
+	border-radius: 12px;
+	border: 2px solid #366473;
+	padding: 14px 25px;
+	outline:none;
+	cursor:pointer;
+	color:#fff;
+	transition:0.25px;
+	font-size:15px;
+	font-weight:bold;
+}
+.button:hover
+{
+	background-color:#5390F5;
+}
+.tableform
+{
+	background-color:rgb(0,0,0,0.5);
+	width:800px;
+	margin:auto;
+	color:white;
+	padding:20px;
+}
+.my-form
+{
+	padding:10px;
+}

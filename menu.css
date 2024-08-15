@@ -1,0 +1,273 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(109, 106, 106, 0.384);
+    font-family: 'Poppins',sans-serif;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.navbar-brand img
+{
+    height:50px;
+    padding-left: 30px;
+    margin-left: 2px;
+}
+
+header.sticky{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+header.sticky .logo{
+    color: #111;
+}
+
+header .logo span{
+    color: #ff0157;
+}
+
+header .navigation{
+    position: relative;
+    display: flex;
+}
+
+header .navigation li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navigation li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+
+header.sticky .navigation li a{
+    color: #111;
+}
+
+header .navigation li a:hover{
+    color: #ff0157;
+}
+.menu{
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(350px,1fr));
+    grid-gap: 20px 40px;
+}
+.heading{
+    background-color: #ff0157;
+    color: #ffffff;
+    margin-bottom: 30px;
+    padding: 40px 0 30px 0;
+    grid-column: 1/-1;
+    text-align: center;
+}
+.heading>h1{
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+}
+.heading>h3{
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 5px;
+}
+.food-items{
+    display: grid;
+    position: relative;
+    grid-template-rows: auto 1fr;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    margin: 0 20px;
+}
+.food-items img{
+    position: relative;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.details{
+    padding: 20px 10px;
+    display: grid;
+    grid-template-rows: auto 1fr 50px;
+    grid-row-gap: 15px;
+}
+.details-sub{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.details-sub>h5{
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+}
+.price{
+    text-align: right;
+}
+
+.details>button{
+    background-color: #ff0157;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 180px;
+    height: 60px;
+    
+    
+}
+.details>button a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer
+{
+	width: 100%;
+	background: #00121b;
+	display: block;
+}
+
+ .inner-footer {
+	width: 95%;
+    height: 5%;
+	margin: auto;
+	padding: 30px 10px;
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	justify-content: center;
+}
+
+ .footer-items {
+	width: 33.333%;
+	padding: 10px 2px;
+	box-sizing: border-box;
+}
+
+ .footer .inner-footer .footer-items img {
+		display: block;
+		margin-top: 0%;
+		margin-bottom: 0%;
+		margin-left: auto;
+		margin-right: auto;
+		width: 25%;
+		
+}
+
+
+ h1 {
+	padding: 2px 0;
+	font-size: 25px;
+	color: #fff;
+	text-align: center;
+}
+
+ .footer-items p {
+	color: grey;
+	font-size: 16px;
+	text-align: justify;
+	line-height: 25px;
+}
+
+ h2 {
+	margin: 10px 90;
+	color: grey;
+	font-size: 16px;
+	font-weight: lighter;
+	text-transform: uppercase;
+	
+}
+
+ .border {
+	margin: 10px 90;
+	height: 2px;
+	width: 80px;
+	background: #ff9800;
+	
+}
+
+ ul {
+	list-style: none;
+	color: #fff;
+	font-size: 15px;
+	letter-spacing: 0.5px;
+}
+
+ ul a {
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	transition: 0.3s;
+}
+
+ ul a:hover {
+	color: #ff9800;
+}
+
+ ul li {
+	margin: 10px 90;
+	height: 25px;
+}
+
+ li i {
+	margin-right: 20px;
+}
+
+ .social-media {
+	width: 100%;
+	color: #fff;
+	text-align: center;
+}
+
+ .social-media a {
+	text-decoration: none;
+}
+
+ .social-media i {
+	height: 15px;
+	width: 15px;
+	margin: 20px 5px;
+	padding: 10px;
+	color: #fff;
+	border-radius: 50%;
+	border: 1px solid grey;
+	transition: 0.3s;
+}
+
+ .social-media i:hover {
+	background: grey;
+}
+
+ .footer-bottom {
+	padding: 10px;
+	background: #111;
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
+}

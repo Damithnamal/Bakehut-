@@ -1,0 +1,51 @@
+Certainly! Here are 10 SQL queries:
+
+1. *Retrieve products with quantities between 20 and 40:*
+   sql
+   SELECT pro_name, pro_quantity FROM Products WHERE pro_quantity BETWEEN 20 AND 40;
+   
+
+2. *Get products with prices between $200 and $400:*
+   sql
+   SELECT pro_name, pro_price FROM Products WHERE pro_price BETWEEN 200.00 AND 400.00;
+   
+
+3. *Fetch products with names starting with 'P':*
+   sql
+   SELECT pro_name FROM Products WHERE pro_name LIKE 'P%';
+   
+
+4. *Retrieve products sorted by their expiry dates:*
+   sql
+   SELECT pro_name, pro_expiry_date FROM Products ORDER BY pro_expiry_date;
+   
+
+5. *Get the total quantity of all products:*
+   sql
+   SELECT SUM(pro_quantity) AS total_quantity FROM Products;
+   
+
+6. *Fetch the average price of products:*
+   sql
+   SELECT AVG(pro_price) AS average_price FROM Products;
+   
+
+7. *Retrieve the earliest manufacturing date among the products:*
+   sql
+   SELECT MIN(pro_mfg_date) AS earliest_manufacturing_date FROM Products;
+   
+
+8. *Get the count of products with prices greater than $400:*
+   sql
+   SELECT COUNT(*) AS count_high_price FROM Products WHERE pro_price > 400.00;
+   
+
+9. *Retrieve products with NULL expiry dates (if any):*
+   sql
+   SELECT pro_name, pro_expiry_date FROM Products WHERE pro_expiry_date IS NULL;
+   
+
+10. *Fetch the highest-priced product and its details:*
+    sql
+    SELECT * FROM Products ORDER BY pro_price DESC LIMIT 1;
+    
